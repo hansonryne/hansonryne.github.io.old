@@ -4,7 +4,7 @@ show_meta: false
 title: "Information Security"
 subheadline: "Posts that relate to your security on the web"
 header:
-   image_fullwidth: "header_unsplash_5.jpg"
+   image_fullwidth: "blog-header.jpg"
 permalink: "/infosec/"
 ---
 <ul>
