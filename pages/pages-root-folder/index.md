@@ -21,7 +21,7 @@ widget3:
   title: "Follow me on Twitter"
   url: 'https://twitter.com/_hansonet_'
   image: https://www.sketchappsources.com/resources/source-image/twitterlogo_1x.png
-  text: 'Twitter is my main social media presence.  It's where I keep up to date.'
+  text: 'Twitter is my main social media presence.  Its where I keep up to date.'
 #
 # Use the call for action to show a button on the frontpage
 #
