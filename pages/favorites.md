@@ -2,7 +2,6 @@
 layout: page
 title: "My Favorites"
 meta_title: "Some of my favorite content on the web."
-subheadline: "Great Links"
 teaser: "A couple of my go to sites on the web."
 permalink: "/favorites/"
 ---
