@@ -6,7 +6,7 @@
 #
 layout: frontpage
 header:
-  image_fullwidth: "header_unsplash_5.jpg"
+  image_fullwidth: "header_hawaii.jpg"
 widget1:
   title: "Blog & Portfolio"
   url: 'https://www.rynehanson.com/blog/'
