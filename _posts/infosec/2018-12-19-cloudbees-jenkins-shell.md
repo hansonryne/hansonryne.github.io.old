@@ -1,6 +1,22 @@
-<figcaption style="font-size:small">
-script</figcaption>
-</figure>
+---
+layout: page
+sidebar: right
+subheadline: 'Pentesting'
+title:  "Vulnerable By Design?  Cloudbees Jenkins"
+teaser: "Achieving Remote Code Execution (RCE) with Cloudbees Jenkins and a little 70s era funk on (my last) your next PenTest!"
+breadcrumb: true
+categories:
+    - infosec
+tags:
+    - blog
+    - infosec
+    - post
+    - pentesting
+    - 'web applications'
+image:
+    thumb: jenkins-shell/s-thumb.png
+    title: jenkins-shell/jenkins.png
+---
 
 On a recent engagement, my team and I were checking out a Cloudbees Jenkins application for our contract customer and we came across the /script page.  This page allows users to be able to run Groovy script and access resources on the operating system that the server is running on.  Of course, this is just (JUST!) a Remote Code Execution (RCE) when used for the wrong purposes.
 
