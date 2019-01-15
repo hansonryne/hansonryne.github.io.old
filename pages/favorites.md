@@ -11,7 +11,7 @@ These are links to some of the places I go to learn or be inspired.
  * https://laconicwolf.com/
  * https://danielmiessler.com/
  * https://krebsonsecurity.com/
- 
- ## Githubs
+
+## Githubs
  * [Laconic Wolf](https://github.com/laconicwolf?tab=repositories)
  * [AWillard](https://github.com/awillard1/Pen-Test-Tools)
