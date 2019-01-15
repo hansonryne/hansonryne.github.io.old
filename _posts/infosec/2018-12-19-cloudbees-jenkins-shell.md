@@ -23,7 +23,7 @@ On a recent engagement, my team and I were checking out a Cloudbees Jenkins appl
 # A Groooooovy Groovy Primer
 So here we are with a script console at a version of Jenkins that I downloaded onto my own machine. Let's boogie.
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2018/12/script.PNG" alt="Script console">
+<img src="/images/jenkins-shell/script.PNG" alt="Script console">
 <figcaption style="font-size:small">
 If you want to follow along, you can get the installation instructions here: <a href="https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins">Jenkins Wiki</a></figcaption>
 </figure>
@@ -34,7 +34,7 @@ Let's go through a couple different Groovy commands that might be useful.
 Groovy is basically Java, but more "far-out".  So a command like execute() is going to be the way we run system commands for the RCE.  Let's give it a try:
 
 <figure style="text-align:center; margin:1em;">
-<img src="/resources/content/images/2018/12/execute.PNG" alt="execute method" style="width:15em; height:15em;">
+<img src="/images/jenkins-shell/execute.PNG" alt="execute method" style="width:15em; height:15em;">
 <figcaption style="font-size:small">
 Hey!?!  What gives man...?</figcaption>
 </figure>
@@ -46,7 +46,7 @@ In the text on the script page, the site instructs you to use 'println()' in ord
 
 But here's the skinny: Groovy UNIXprocess objects have a method called 'getText()' that gives the output of the command.
 <figure style="text-align:center; margin:1em;">
-<img src="/resources/content/images/2018/12/text-1.PNG" alt="text method" style="width:15em; height:15em;">
+<img src="/images/jenkins-shell/text-1.PNG" alt="text method" style="width:15em; height:15em;">
 <figcaption style="font-size:small">
 Psychedelic dude...</figcaption>
 </figure>
@@ -62,13 +62,13 @@ def file1 = new File('groovy.txt')
 file1 << "Groovy is Radical, Man!"
 ```
 <figure style="text-align:center; margin:1em;">
-<img src="/resources/content/images/2018/12/denied.PNG" alt="denied" style="width:15em; height:15em;">
+<img src="/images/jenkins-shell/denied.PNG" alt="denied" style="width:15em; height:15em;">
 <figcaption style="font-size:small">
 PSYCH!</figcaption>
 </figure>
 Ah that's bogus dude.  Looks like the man is keeping us from writing to the server root.  /tmp is pretty chill though.
 <figure style="text-align:center; margin:1em;">
-<img src="/resources/content/images/2018/12/written.PNG" alt="denied" style="width:15em; height:15em;">
+<img src="/images/jenkins-shell/written.PNG" alt="denied" style="width:15em; height:15em;">
 <figcaption style="font-size:small">
 That's rad...</figcaption>
 </figure>
@@ -84,7 +84,7 @@ shell.delete()
 ```
 So you can see we have a file object that we write the bash reverse shell to, We run it using bash.  Then we give everything a second to chill out before we clean it all up.  Let's get jiggy with it.
 <figure style="text-align:center; margin:1em;">
-<img src="/resources/content/images/2018/12/shell.gif" alt="reverse shell" style="width:75%;">
+<img src="/images/jenkins-shell/shell.gif" alt="reverse shell" style="width:75%;">
 <figcaption style="font-size:small">
 Groovy</figcaption>
 </figure>
