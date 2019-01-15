@@ -1,6 +1,26 @@
+---
+layout: page
+sidebar: right
+subheadline: 'Pentesting'
+title:  "Vulnerable By Design?  Apache NiFi"
+teaser: "A pentester's guide for combining Apache NiFi, and a hyperdrive to make the Kessel Run (aka execute a reverse shell) in <12 packets!"
+breadcrumb: true
+categories:
+    - infosec
+tags:
+    - blog
+    - infosec
+    - post
+    - pentesting
+    - 'web applications'
+image:
+    thumb: /wwhf-post/wwhf-logo-thumb.png
+    title: /wwhf-post/wwhf-logo.png
+---
+
 Not too long ago...in this galaxy...
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2018/12/shellwars.png" alt="SHELL WARS">
+<img src="/images/nifi-shell/shellwars.png" alt="SHELL WARS">
 <figcaption style="font-size:small;">
 Credit: Star Wars Intro Creator
 </figcaption>
