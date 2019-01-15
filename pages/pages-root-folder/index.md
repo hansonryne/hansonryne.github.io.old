@@ -8,7 +8,7 @@ layout: frontpage
 header:
   image_fullwidth: "header_hawaii.jpg"
 widget1:
-  title: "Blog & Portfolio"
+  title: "Blog"
   url: 'https://www.rynehanson.com/blog/'
   image: books-v1.jpg
   text: 'Browse the blog.  It is updated with content every so often.  :)'
