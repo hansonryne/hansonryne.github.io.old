@@ -1,12 +1,9 @@
 ---
 layout: page
 title: "Contact"
-meta_title: "Contact and use our contact form"
-subheadline: "Wufoo-powered contact forms"
-teaser: "Get in touch with me? Use the contact form."
+meta_title: "Contact me online"
+subheadline: "Want to talk?"
+teaser: "How to reach me."
 permalink: "/contact/"
 ---
-If you need a fabulous contact form for your website, I suggest you use [Wufoo][1]. You can use three forms for free, you get no spam and if you get more than 100 entries you have to pay.
-
-
- [1]: http://www.wufoo.com/
+Please feel free to reach out to me.  You can find me on Twitter <a href="https://twitter.com/_hansonet_">@_hansonet_</a>
