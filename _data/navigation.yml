@@ -67,6 +67,15 @@
     url: "/infosec/"
   - title: "Blog Archive"
     url: "/blog/archive/"
+    
+- title: Favorites
+  url: "/favorites/"
+  side: left
+  dropdown:
+  - title: "Laconic Wolf"
+    url: "https://laconicwolf.com/"
+  - title: "Daniel Miessler"
+    url: "https://danielmiessler.com/"
 
 - title: "Search"
   url: "/search/"
