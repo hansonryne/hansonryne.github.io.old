@@ -8,6 +8,10 @@
 
 - name: "Github Pages
   url: "https://pages.github.com/"
+  class: "network-entypo"
+  title: "Github Pages"
 
 - name: "Feeling Responsive"
   url: "http://phlow.github.io/feeling-responsive/"
+  class: "network-entypo"
+  title: "Feeling Responsive"
