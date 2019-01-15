@@ -71,18 +71,6 @@
 - title: Favorites
   url: "/favorites/"
   side: left
-  dropdown:
-  - title: "Blogs"
-    dropdown:
-    - title: "Laconic Wolf"
-      url: "https://laconicwolf.com/"
-    - title: "Daniel Miessler"
-      url: "https://danielmiessler.com/"
-  dropdown: "Githubs"
-    - title: "Laconic Wolf"
-      url: "https://github.com/laconicwolf?tab=repositories"
-    - title: "AWillard"
-      url: "https://github.com/awillard1/Pen-Test-Tools"
 
 - title: "Search"
   url: "/search/"
