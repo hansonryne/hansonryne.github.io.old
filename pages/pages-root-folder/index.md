@@ -11,7 +11,7 @@ widget1:
   title: "Blog & Portfolio"
   url: 'https://www.rynehanson.com/blog/'
   image: widget-1-302x182.jpg
-  text: 'Browse the blog.  It is updated with content every so often.  :)
+  text: 'Browse the blog.  It is updated with content every so often.  :)'
 widget2:
   title: "Check out my GitHub"
   url: 'https://github.com/hansonryne'
