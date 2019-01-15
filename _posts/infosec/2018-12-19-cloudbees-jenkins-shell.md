@@ -14,8 +14,8 @@ tags:
     - pentesting
     - 'web applications'
 image:
-    thumb: jenkins-shell/s-thumb.png
-    title: jenkins-shell/jenkins.png
+    thumb: jenkins-shell/jenkins.png
+    title: jenkins-shell/500px-Groovy-logo.svg_.png
 ---
 
 On a recent engagement, my team and I were checking out a Cloudbees Jenkins application for our contract customer and we came across the /script page.  This page allows users to be able to run Groovy script and access resources on the operating system that the server is running on.  Of course, this is just (JUST!) a Remote Code Execution (RCE) when used for the wrong purposes.
