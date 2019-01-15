@@ -14,8 +14,8 @@ tags:
     - pentesting
     - 'web applications'
 image:
-    thumb: /nifi-shell/shellwars-thumb.png
-    title: /nifi-shell/nifi.png
+    thumb: nifi-shell/shellwars-thumb.png
+    title: nifi-shell/nifi.png
 ---
 
 Not too long ago...in this galaxy...
