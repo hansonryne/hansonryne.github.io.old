@@ -20,7 +20,7 @@ image:
 
 On a recent engagement, my team and I were checking out a Cloudbees Jenkins application for our contract customer and we came across the /script page.  This page allows users to be able to run Groovy script and access resources on the operating system that the server is running on.  Of course, this is just (JUST!) a Remote Code Execution (RCE) when used for the wrong purposes.
 
-# A Groooooovy Groovy Primer
+## A Groooooovy Groovy Primer
 So here we are with a script console at a version of Jenkins that I downloaded onto my own machine. Let's boogie.
 <figure style="text-align:center; margin:1em">
 <img src="/images/jenkins-shell/script.PNG" alt="Script console">
@@ -73,7 +73,7 @@ Ah that's bogus dude.  Looks like the man is keeping us from writing to the serv
 That's rad...</figcaption>
 </figure>
 
-# Execute a Shell
+## Execute a Shell
 So using all this together, we can put together a pretty slammin' reverse shell script.  
 ```
 def shell = new File('/tmp/shell.sh')
@@ -89,12 +89,12 @@ So you can see we have a file object that we write the bash reverse shell to, We
 Groovy</figcaption>
 </figure>
 
-# Defend Yourselves
+## Defend Yourselves
 Another RCE in the bag.  But how do people defend against this?  Well, the folks at Jenkins have thought about it and do provide a script "sandbox" for admins to be able to manage what can run automatically, and what they need to approve before it can run.  You can check that out here: [Sandbox Documentation](https://jenkins.io/doc/book/managing/script-approval/#groovy-sandbox)
 
 Make sure if you are going to use Jenkins, your admins are keeping a close eye on what scripts are running. 
 
-# Conclusion
+## Conclusion
 A lot of software out there is amazing and provides a lot of flexibility to the users.  This is a GOOD thing!  Just remember that every convenience has a cost associated with it, and if that cost is in the security realm, you need to manage the risk accordingly.  If you trust your users or use it on your home network with a 45 firewalls between you and the public internet, Jenkins with Groovy scripts are...well...groovy.  But if you don't need the functionality or don't have a lot of trust in your userbase, don't use Jenkins scripts.  Like...just don't man..can ya dig it?
 
 <h3>Relevant Links:</h3>
