@@ -63,6 +63,8 @@
   url: "/blog/"
   side: left
   dropdown:
+  - title: "InfoSec"
+    url: "/infosec/"
   - title: "Blog Archive"
     url: "/blog/archive/"
 
