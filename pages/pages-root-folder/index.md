@@ -10,17 +10,17 @@ header:
 widget1:
   title: "Blog & Portfolio"
   url: 'https://www.rynehanson.com/blog/'
-  image: widget-1-302x182.jpg
+  image: books-v1.jpg
   text: 'Browse the blog.  It is updated with content every so often.  :)'
 widget2:
   title: "Check out my GitHub"
   url: 'https://github.com/hansonryne'
   text: 'A sample of some public projects I have started and mostly not finished.'
-  image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+  image: github.png
 widget3:
   title: "Follow me on Twitter"
   url: 'https://twitter.com/_hansonet_'
-  image: https://www.sketchappsources.com/resources/source-image/twitterlogo_1x.png
+  image: twitter-logo.png
   text: 'Twitter is my main social media presence.  Its where I keep up to date.'
 #
 # Use the call for action to show a button on the frontpage
