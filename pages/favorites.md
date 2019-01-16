@@ -8,9 +8,9 @@ permalink: "/favorites/"
 These are links to some of the places I go to learn or be inspired.
 
 ## Blogs
- * https://laconicwolf.com/
- * https://danielmiessler.com/
- * https://krebsonsecurity.com/
+ * [https://laconicwolf.com/](https://laconicwolf.com/)
+ * [https://danielmiessler.com/](https://danielmiessler.com/)
+ * [https://krebsonsecurity.com/](https://krebsonsecurity.com/)
 
 ## Githubs
  * [Laconic Wolf](https://github.com/laconicwolf?tab=repositories)
