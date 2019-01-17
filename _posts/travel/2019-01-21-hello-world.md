@@ -1,23 +1,22 @@
 ---
 layout: page
 sidebar: right
-subheadline: 'whoami'
+subheadline: 'Travel/Lifestyle'
 title:  "Hello World"
 teaser: "A little introduction so you know who I am, where I come from, and in a word...why."
 breadcrumb: true
 categories:
-    - Travel
+    - Travel/Lifestyle
 tags:
     - blog
     - travel
+    - lifestyle
     - post
     - introduction
 # image:
 #    thumb: /wwhf-post/wwhf-logo-thumb.png
 #    title: /wwhf-post/wwhf-logo.png
 ---
-# Hello World
-
 When a programmer starts to learn a new language, the first thing they tend to write is a program that prints the words "Hello World" to the screen.  It is more of a tradition than a useful exercise in what you can do with a programming language, but it also proves that you are set up and ready to go, maybe even ready to start a new adventure.
 
 Well as it always seems to happen, different parts of life share a lot of common themes, and "Hello World" has found its way into my life outside of cyberspace.  A few months ago, my family decided that we were tired of sitting in our house in San Antonio and needed to break out of our routine.  It wasn't that we were on the brink of poverty - far from it.  We weren't caught up in jobs that we hated or surrounded by people we couldn't stand.  Simply put, we just knew that there was more to life than the wake up, rinse, repeat cycle that plagued us.  There was a whole range of possibilities available to us, but we were watching them fly by without ever considering there was something we could do about it.
