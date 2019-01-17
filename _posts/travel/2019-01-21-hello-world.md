@@ -6,7 +6,7 @@ title:  "Hello World"
 teaser: "A little introduction so you know who I am, where I come from, and in a word...why."
 breadcrumb: true
 categories:
-    - Travel/Lifestyle
+    - travel-lifestyle
 tags:
     - blog
     - travel
