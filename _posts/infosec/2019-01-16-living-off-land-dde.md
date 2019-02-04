@@ -1,3 +1,24 @@
+---
+layout: page
+sidebar: right
+subheadline: 'Pentesting'
+title:  "Living Off the Land With DDE"
+teaser: "A pen tester's guide to using native Windows programs and tools, specifically  Dynamic Data Exchange (DDE), to excel in your next PenTest!"
+breadcrumb: true
+categories:
+    - infosec
+tags:
+    - blog
+    - infosec
+    - post
+    - pentesting
+    - office
+    - windows
+image:
+    thumb: lol-dde/DDE-Excel2.png
+    title: lol-dde/DDE-Excel2.png
+---
+
 I'm a huge fan of living off the land when it comes to hacking and working my way through a network. There are few things that feel better than taking a perfectly reasonable tool and flipping it inside out for my own benefit.
 
 Recently, I was working on a penetration test for a web application, and I found a file upload function that allowed users to upload and download Excel files. The first thing that came across my mind - macros. But when I tried to upload a macro-enabled xlsm file, I was denied.
