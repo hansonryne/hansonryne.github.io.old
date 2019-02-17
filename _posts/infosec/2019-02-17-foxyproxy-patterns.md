@@ -1,7 +1,7 @@
 ---
 layout: page
 sidebar: right
-subheadline: 'Infosec'
+subheadline: 'Pentesting Tools'
 title:  "Selective Proxy Routing with FoxyProxy Patterns"
 teaser: "Don't send all your personal traffic to your intercepting proxy when you are testing a web app.  Use patterns to choose what gets logged."
 breadcrumb: true
@@ -13,6 +13,7 @@ tags:
     - 'web applications'
     - firefox
     - proxy
+    - tools
 image:
     thumb: foxyproxypatterns/foxyproxy.svg
     title: foxyproxypatterns/title.PNG
