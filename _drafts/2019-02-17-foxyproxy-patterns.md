@@ -52,6 +52,8 @@ After the patterns are saved into the profile, you will see a new option when yo
 Now if your proxy is running, you should notice that only traffic that matches the patterns you entered in the profile settings is being sent to your proxy.  Congratulations!  No more worrying about sending your personal traffic to a proxy log or having to filter through hundreds of different domains trying to find the one request you need.
 
 ## Other Notes
-When the patterns are set up and enabled, the icon in the browser toolbar will show you what proxy profile you are currently sending traffic through based on the page you are looking at.  Take a look at this while you are testing to make sure it says the profile you expect.
+* When the patterns are set up and enabled, the icon in the browser toolbar will show you what proxy profile you are currently sending traffic through based on the page you are looking at.  Take a look at this while you are testing to make sure it says the profile you expect.
 
-This is only a guide for FoxyProxy, but there are many browser proxy add-ons that have similar features.  SwitchyOmega for Chrome is an example.  In the SwitchyOmega settings, there is a profile called, 'auto switch' that allows you to use similar wildcard patterns to match and select specific proxies based on IP or domain name.  More or less, you can generally apply the step in this guide to set those up to your liking as well.
+* You can enable or disable patterns without deleteing them or a profile by going into FoxyProxy options and toggling the switch for a profile on and off.
+
+* This is only a guide for FoxyProxy, but there are many browser proxy add-ons that have similar features.  SwitchyOmega for Chrome is an example.  In the SwitchyOmega settings, there is a profile called, 'auto switch' that allows you to use similar wildcard patterns to match and select specific proxies based on IP or domain name.  More or less, you can generally apply the step in this guide to set those up to your liking as well.
