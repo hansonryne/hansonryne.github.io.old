@@ -1,8 +1,8 @@
 ---
 layout: page
 sidebar: right
-subheadline: 'Pentesting'
-title:  "Web Application Pentesting with Burp Suite (part 1)"
+subheadline: 'Pentesting Tools'
+title:  "Web Application Pentesting with Burp Suite (Part 1)"
 teaser: "When it comes to pentesting web applications there is nothing quite like Burp Suite. Join me as we dig into Burp Suite with real world practice examples!"
 breadcrumb: true
 categories:
