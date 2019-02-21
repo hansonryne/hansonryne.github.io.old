@@ -129,10 +129,10 @@ Suite Success
 </figcaption>
 </figure>
 
-##FireFox Certificate Installation
+## FireFox Certificate Installation
 To install the recently exported certificate in FireFox, go to Options, search for "certificates", and click "View Certificates".   Click on the Authorities tab and then Import.  Find the certificate you exported before (you may need to change to "All Files (*.*)" in the explorer file type dropdown), open it, and click through with default settings to the end.  When you have reached a success message you have made it! Now restart FireFox and when you browse to HTTPS sites, you should have no Insecure Connection warnings.
 
-##Chrome Certificate Installation
+## Chrome Certificate Installation
 To install the certificates in Chrome, go to Settings, search for "Manage Certificates", and click the highlighted section to open the Certificates dialog window.  Make sure you select the "Trusted Root Certificate Authorities" tab and then click import.  Find the proper certificate from burp (you may need to change to "All Files (*.*)" in the explorer file type dropdown), open it, and click through to the end of the wizard with default settings.  You should get a popup saying the import was successful.  Restart Chrome and once again, HTTPS will work without error warnings.
 
 <h1>Good Job!</h1>
