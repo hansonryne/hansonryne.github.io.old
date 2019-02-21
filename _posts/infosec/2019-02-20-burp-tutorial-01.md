@@ -2,7 +2,7 @@
 layout: page
 sidebar: right
 subheadline: 'Pentesting'
-title:  "Web Application Penteting with Burp Suite (part 1)"
+title:  "Web Application Pentesting with Burp Suite (part 1)"
 teaser: "When it comes to pentesting web applications there is nothing quite like Burp Suite. Join me as we dig into Burp Suite with real world practice examples!"
 breadcrumb: true
 categories:
@@ -14,13 +14,13 @@ tags:
     - burp
     - tutorial
 image:
-    thumb: burptut-01/foxyproxy.svg
-    title: burptut-01/title.PNG
+    thumb: burptut-01/logo.jpg
+    title: burptut-01/Burp-2.png
 ---
 When it comes to hacking web applications, the possibilities are endless because the technologies to build them come in nearly unlimited flavors and stacks.  These days you can run any combination of front and backend codebase, with any storage database you want, in the cloud or on site, behind a firewall or VPN, on a desktop or a cell phone, for a bank or a toaster.....you get the point.  So with all of this variability on the web today, it might seem like you need a tool for every situation.  To some degree you are right, but the good news is there is one tool that will always come in handy: an HTTP proxy.  And when it comes to an HTTP proxy, one name stands above the REST (like an API...get it?).
 
 Bottom Line Up Front: Burp Suite is a web application pentester's best friend.
-![Burp-2](/images/burptut-01/Burp-2.png)
+
 # Burp Suite?
 While it is unclear why a company would name their flagship product after a belch, one thing that is clear is the folks at <a href=https://portswigger.net/burp>PortSwigger</a> have made a tool that will stand the test of time in web application testing.  Burp Suite is a form of HTTP proxy - that is to say it sits in between your browser and the internet and forwards traffic in either direction.  Think of it as a man-in-the-middle attack on yourself, but you are happy about it.
 What makes Burp SWEET, is that it will record, intercept, replay, and analyze that same traffic while also allowing you to manipulate requests and responses in ways your browser won't.  On top of that, it is extensible via third-party add-ons that can be written in Java, Ruby, or Python in order to automate testing and simplify attack techniques.  Basically, if you want to do something with a web request or response, Burp will help you - probably in a variety of ways.
