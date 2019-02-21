@@ -20,7 +20,7 @@ image:
 When it comes to hacking web applications, the possibilities are endless because the technologies to build them come in nearly unlimited flavors and stacks.  These days you can run any combination of front and backend codebase, with any storage database you want, in the cloud or on site, behind a firewall or VPN, on a desktop or a cell phone, for a bank or a toaster.....you get the point.  So with all of this variability on the web today, it might seem like you need a tool for every situation.  To some degree you are right, but the good news is there is one tool that will always come in handy: an HTTP proxy.  And when it comes to an HTTP proxy, one name stands above the REST (like an API...get it?).
 
 Bottom Line Up Front: Burp Suite is a web application pentester's best friend.
-![Burp-2](/resources/content/images/2019/02/Burp-2.png)
+![Burp-2](/images/burptut-01/Burp-2.png)
 # Burp Suite?
 While it is unclear why a company would name their flagship product after a belch, one thing that is clear is the folks at <a href=https://portswigger.net/burp>PortSwigger</a> have made a tool that will stand the test of time in web application testing.  Burp Suite is a form of HTTP proxy - that is to say it sits in between your browser and the internet and forwards traffic in either direction.  Think of it as a man-in-the-middle attack on yourself, but you are happy about it.
 What makes Burp SWEET, is that it will record, intercept, replay, and analyze that same traffic while also allowing you to manipulate requests and responses in ways your browser won't.  On top of that, it is extensible via third-party add-ons that can be written in Java, Ruby, or Python in order to automate testing and simplify attack techniques.  Basically, if you want to do something with a web request or response, Burp will help you - probably in a variety of ways.
@@ -30,7 +30,7 @@ To get started, you must first download a version of Burp from the <a href=https
 Most of the essential tools are available in the free Community Edition, but if you really want to turn up the heat, the Professional Edition will always be updated first and comes with many additional features for a fairly reasonable $399/year (image below is out of date).  These include a full traffic history search function, faster brute forcing speeds in the Intruder tool, an automated scanner, various engagement tools, and many more things that make life easier for you.  I will be using Pro on Windows for all of the follow on tutorials and reviews.  So if you want to follow along, you'll want the newest version of Pro.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/01/burpflavors.PNG" alt="versions">
+<img src="/images/burptut-01/burpflavors.PNG" alt="versions">
 <figcaption style="font-size:small;">
 Start with Free.  You'll want Pro
 </figcaption>
@@ -43,7 +43,7 @@ You also want to make sure [Java](https://www.java.com/en/download/) is installe
 After downloading all the required software, run the installers as you would any other application and launch the program.  The first screen you see will look a little something like this:
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/01/burp1-1.PNG" alt="Starting Screen">
+<img src="/images/burptut-01/burp1-1.PNG" alt="Starting Screen">
 <figcaption style="font-size:small;">
 Welcome to Burp
 </figcaption>
@@ -54,7 +54,7 @@ If you bought professional you might see a popup to put in your license key at t
 If you want to save your project, click new project on disk.  Otherwise click next and then "Start Burp" and you will be in the Dashboard.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/01/burp2.PNG" alt="Dashboard">
+<img src="/images/burptut-01/burp2.PNG" alt="Dashboard">
 <figcaption style="font-size:small;">
     Ok...<em>now</em> Welcome to Burp
 </figcaption>
@@ -66,7 +66,7 @@ So the thing about an HTTP proxy is you need to force your browser to use it.  E
 Go to https://addons.mozilla.org/ and search for FoxyProxy.  The one you are looking for looks like this: 
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/01/foxyproxy.PNG" alt="Add On" style="max-width:200px">
+<img src="/images/burptut-01/foxyproxy.PNG" alt="Add On" style="max-width:200px">
 <figcaption style="font-size:small;">
     ....advanced what?!
 </figcaption>
@@ -75,7 +75,7 @@ Go to https://addons.mozilla.org/ and search for FoxyProxy.  The one you are loo
 Once it is installed (you may need to restart your browser) you can open the options by clicking on the FoxyProxy icon in the browser toolbar and selecting "Options".
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/01/foxyproxyoptions.PNG" alt="Options">
+<img src="/images/burptut-01/foxyproxyoptions.PNG" alt="Options">
 <figcaption style="font-size:small;">
     Foxy
 </figcaption>
@@ -91,7 +91,7 @@ Now you might think you are done, but if you try to navigate to any HTTPS site, 
 To get started installing SwitchyOmega, go to the <a href=https://chrome.google.com/webstore/category/extensions> Chrome Web Store</a> and search for SwitchyOmega.  It looks like this:
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/01/so1.PNG" alt="SwitchyOmega">
+<img src="/images/burptut-01/so1.PNG" alt="SwitchyOmega">
 <figcaption style="font-size:small;">
     Nice rating FelisCatus
 </figcaption>
@@ -100,7 +100,7 @@ To get started installing SwitchyOmega, go to the <a href=https://chrome.google.
 Add it to Chrome and give it the permissions it needs.  Once it is installed you can go through the tutorial or skip it.  Eventually you will need to add a New Profile, give it a name, change the protocol to HTTP, set the server to 127.0.0.1, and  set the port to 8080.  As with FireFox, if you changed the default Burp settings you can go to the Proxy tab in Burp, the Options tab under Proxy, and look at the settings under Proxy Listeners to find the right informaiton.  Finally click apply changes and make sure the new profile is selected when you click on the icon in the Chrome toolbar.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/01/so2.PNG" alt="SwitchyOmega" style="max-height:200px">
+<img src="/images/burptut-01/so2.PNG" alt="SwitchyOmega" style="max-height:200px">
 <figcaption style="font-size:small;">
 You can name it whatever you want
 </figcaption>
@@ -114,7 +114,7 @@ Burp has to use its own SSL certificate when attempting to proxy for sites using
 First, go to the Proxy tab in Burp and then the Options tab in Proxy.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/01/sslsetup1.PNG" alt="SwitchyOmega" style="max-width:400px">
+<img src="/images/burptut-01/sslsetup1.PNG" alt="SwitchyOmega" style="max-width:400px">
 <figcaption style="font-size:small;">
 This is what I mean
 </figcaption>
@@ -123,7 +123,7 @@ This is what I mean
 Then click "Import/Export CA Certificate", select "Certificate in DER Format" from the export options, click next, choose where to save the file, click next, see that it worked, and close.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/01/sslsetup2.PNG" alt="SwitchyOmega" style="max-width:400px">
+<img src="/images/burptut-01/sslsetup2.PNG" alt="SwitchyOmega" style="max-width:400px">
 <figcaption style="font-size:small;">
 Suite Success
 </figcaption>
