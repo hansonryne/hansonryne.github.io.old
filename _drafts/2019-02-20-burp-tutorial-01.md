@@ -1,4 +1,22 @@
-
+---
+layout: page
+sidebar: right
+subheadline: 'Pentesting'
+title:  "Web Application Penteting with Burp Suite (part 1)"
+teaser: "When it comes to pentesting web applications there is nothing quite like Burp Suite. Join me as we dig into Burp Suite with real world practice examples!"
+breadcrumb: true
+categories:
+    - infosec
+tags:
+    - blog
+    - pentesting
+    - 'web applications'
+    - burp
+    - tutorial
+image:
+    thumb: burptut-01/foxyproxy.svg
+    title: burptut-01/title.PNG
+---
 When it comes to hacking web applications, the possibilities are endless because the technologies to build them come in nearly unlimited flavors and stacks.  These days you can run any combination of front and backend codebase, with any storage database you want, in the cloud or on site, behind a firewall or VPN, on a desktop or a cell phone, for a bank or a toaster.....you get the point.  So with all of this variability on the web today, it might seem like you need a tool for every situation.  To some degree you are right, but the good news is there is one tool that will always come in handy: an HTTP proxy.  And when it comes to an HTTP proxy, one name stands above the REST (like an API...get it?).
 
 Bottom Line Up Front: Burp Suite is a web application pentester's best friend.
