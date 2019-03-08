@@ -92,10 +92,10 @@ You can filter by a lot of different things
 
 Now when you click off that menu, Burp will hide everything that hasn't been added to the scope, and you will have a much cleaner space to work in.
 
-###Bonus Blog: Advanced Proxy Setup
+### Bonus Blog: Advanced Proxy Setup
 [Filter traffic that gets sent to Burp from the browser proxy settings](https://www.rynehanson.com/infosec/foxyproxy-patterns/)
 
-##Take a Quick Breath, Then Get to Spidering and Scanning
+## Take a Quick Breath, Then Get to Spidering and Scanning
 
 So now that Burp is proxying, logging, and scoping your web traffic, it's time to DO THE DAMN THING and start looking for vulnerabilities.  The quickest and easiest way to do that is to use Burp's automated crawl and scan tools.  Remember I am using the Burp professional version 2.0.xbeta, so if you are using an older version like 1.X or the free Community Edition and your options don't look exactly the same, that is why.
 
