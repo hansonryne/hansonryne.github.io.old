@@ -1,4 +1,24 @@
-So you made it through [Part 1](https://opensecurity.io/resources/beginners-guide-to-web-app-pentesting-burp-suite/)? Congrats on your success - that was the most boring part.  Now it's time to hit the web and hack some apps.  But where do we start?  Well, I don't recommend hitting the open information highway and testing whatever you see.  That might cause some problems for you.  Thankfully, there are many apps to test with online that are free to use in a safe environment.
+---
+layout: page
+sidebar: right
+subheadline: 'Pentesting Tools'
+title:  "Web Application Pentesting with Burp Suite (Part 2)"
+teaser: "Continuing the Burp Suite Tutorial Series with a look at Scope, Scanning, and Spidering"
+breadcrumb: true
+categories:
+    - infosec
+tags:
+    - blog
+    - pentesting
+    - 'web applications'
+    - burp
+    - tutorial
+image:
+    thumb: burptut-02/logo.jpg
+    title: burptut-02/Burp-2.png
+---
+
+So you made it through [Part 1](https://www.rynehanson.com/infosec/burp-tutorial-01/)? Congrats on your success - that was the most boring part.  Now it's time to hit the web and hack some apps.  But where do we start?  Well, I don't recommend hitting the open information highway and testing whatever you see.  That might cause some problems for you.  Thankfully, there are many apps to test with online that are free to use in a safe environment.
 
 This part in the series is going to go over some basic uses of Burp to get you on the road to your first finding.  To start, we need to set up a good practice target.  After that, we will take a look at scoping our testing and using Burp's built in crawl and scan tools to try and find some low hanging fruit.  Maybe even squeeze some "Juice" out of it. (You'll understand that pun in a second).  All of this is just the beginning of what will eventually lead to a mastery of Burp Suite, so now is a good time to be excited.
 
