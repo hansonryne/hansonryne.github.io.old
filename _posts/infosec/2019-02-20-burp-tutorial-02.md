@@ -14,8 +14,8 @@ tags:
     - burp
     - tutorial
 image:
-    thumb: burptut-02/logo.jpg
-    title: burptut-02/Burp-2.png
+    thumb: burptut-02/spider-scope.jpg
+    title: burptut-02/spider-scope.jpg
 ---
 
 So you made it through [Part 1](https://www.rynehanson.com/infosec/burp-tutorial-01/)? Congrats on your success - that was the most boring part.  Now it's time to hit the web and hack some apps.  But where do we start?  Well, I don't recommend hitting the open information highway and testing whatever you see.  That might cause some problems for you.  Thankfully, there are many apps to test with online that are free to use in a safe environment.
@@ -27,7 +27,7 @@ This part in the series is going to go over some basic uses of Burp to get you o
 The best and easiest way to get started with practicing web hacking (that I have found) is to use <a href="https://attackdefense.com">attackdefense.com</a>.  At the time I'm writing this, the site is free to use, and all you need is a Google account.  For the purposes of the rest of this series the specific section of attackdefense that we will use is the <a href="https://www.owasp.org/index.php/OWASP_Juice_Shop_Project">OWASP Juice Shop Vulnerable Web Application</a> (see pun from previous paragraph).  It is listed on the site under the 'Deliberately Vulnerable' -> 'Web Apps' navbar option, and it is called (drumroll.....) <a href="https://attackdefense.com/challengedetails?cid=452">'Juice Shop'</a>.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/01/juiceshop.PNG" alt="Juice Shop">
+<img src="/images/burptut-02/juiceshop.PNG" alt="Juice Shop">
 <figcaption style="font-size:small;">
 A nice juicy app to test 
 </figcaption>
@@ -38,7 +38,7 @@ The best thing about this setup is you can start and stop the application as man
 ## Get the Proxy Up and Running
 Once the application is running and you click on the lab link (should be something like http://sdfadgagaweff.public.attackdefenselabs.com) to navigate to the web page, you will finally be able to set up Burp to intercept traffic.  Depending on the browser proxy extension you set up in Part 1, set it up to send all traffic through Burp on its IP and port, and start browsing the lab.
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/02/foxyproxy.PNG" alt="FoxyProxy">
+<img src="/images/burptut-02/foxyproxy.PNG" alt="FoxyProxy">
 <figcaption style="font-size:small;">
 If you don't recognize this you skipped <a href='https://opensecurity.io/resources/beginners-guide-to-web-app-pentesting-burp-suite/'>Part 1</a> .... shame on you
 </figcaption>
@@ -48,7 +48,7 @@ If you don't recognize this you skipped <a href='https://opensecurity.io/resourc
 ## Finally Using Burp
 Hopefully you will see stuff showing up in the 'Site map' section of the 'Target' tab.  In some cases, like if you have other browser tabs open, you might see WAY too much stuff showing up.
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/02/lotsoftargets.PNG" alt="lotsoftargets">
+<img src="/images/burptut-02/lotsoftargets.PNG" alt="lotsoftargets">
 <figcaption style="font-size:small;">
 TOO MANY TARGETS (redacted)
 </figcaption>
@@ -60,7 +60,7 @@ Looking at the pane on the left side, you can see there are a lot of domains goi
 If you are in the 'Site map' tab, move one tab over to the right and you will be in the 'Scope' area for burp.  It looks a little something like this.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/02/scopetab.PNG" alt="scope">
+<img src="/images/burptut-02/scopetab.PNG" alt="scope">
 <figcaption style="font-size:small;">
 360NoScOp3?
 </figcaption>
@@ -73,7 +73,7 @@ Paring down results can be done in a variety of ways.  First, you can just click
 If typing or copy/pasting a site in by hand just doesn't do it for you, Burp also allows you to add items to the target scope by right clicking on the domain in the 'Site map' tab and then choosing "Add to scope" in the dropdown.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/02/addtoscope.PNG" alt="add target">
+<img src="/images/burptut-02/addtoscope.PNG" alt="add target">
 <figcaption style="font-size:small;">
 Right click menus are the best place to learn about a tool like Burp
 </figcaption>
@@ -84,7 +84,7 @@ Once you add an item to a scope, Burp will ask if you want to stop paying attent
 But you aren't quite done decluttering your 'Site map' tab yet.  The last thing you need to do is filter out all the other sites that were already captured before the scope was set.  To do that, go back to the 'Site map' tab, click on the filter section that runs across the top of the window, and choose the box that says "Show only in-scope items."
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/02/scopefilter.PNG" alt="filter options">
+<img src="/images/burptut-02/scopefilter.PNG" alt="filter options">
 <figcaption style="font-size:small;">
 You can filter by a lot of different things
 </figcaption>
@@ -102,7 +102,7 @@ So now that Burp is proxying, logging, and scoping your web traffic, it's time t
 From the 'Site map' tab, right click on your target and search the dropdown menu for the 'Scan' option.  Clicking on that will open a new window where you can select scanning options.  In this case, we will go with the default options, but feel free to poke around and try different configurations.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/02/newscan.PNG" alt="New Scan">
+<img src="/images/burptut-02/newscan.PNG" alt="New Scan">
 <figcaption style="font-size:small;">
 Don't be afraid to spend some time poking around.  I'm not going anywhere.
 </figcaption>
@@ -111,7 +111,7 @@ Don't be afraid to spend some time poking around.  I'm not going anywhere.
 When you click 'Ok' and start the scan, head back to the 'Dashboard' tab and look in the Tasks pane.  You should see a new box with a request counter incrementing.  This is the task that is scanning the site you selected for issues.  
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/02/scan.gif" alt="running scan">
+<img src="/images/burptut-02/scan.gif" alt="running scan">
 <figcaption style="font-size:small;">
 And we are off to the races
 </figcaption>
@@ -120,7 +120,7 @@ And we are off to the races
 If an issue is detected, it will show up in the pane just to the right of the running task with a description of the issue and which request or response got flagged.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/02/issues.PNG" alt="issue pane">
+<img src="/images/burptut-02/issues.PNG" alt="issue pane">
 <figcaption style="font-size:small;">
 You've got some issues....
 </figcaption>
@@ -131,7 +131,7 @@ Nice!  Looks like we have an 'Open redirection' issue in the Juice Shop applicat
 The other thing that happened while the scan was running, was your 'Site-map' was populated by the crawling (also known as spidering) function.  This might help you uncover interesting areas like the 'private' directory, that you might miss while navigating the site manually.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/02/crawl.PNG" alt="sitemap">
+<img src="/images/burptut-02/crawl.PNG" alt="sitemap">
 <figcaption style="font-size:small;">
 Things you might have missed doing it on your own.  'Private' looks..well...private.</figcaption>
 </figure>
