@@ -26,7 +26,7 @@ This post focuses on the core function of Burp Suite: the intercepting proxy.  T
 As I've mentioned before, the use of an intercepting proxy for web app pentesting is incredibly important.  Burp Suite gives you this functionality in the 'Proxy' tab of the interface.
 
 <figure style="text-align:center; margin:1em">
-<img src="burptut-03/proxytab.PNG" alt="Proxy Tab">
+<img src="/images/burptut-03/proxytab.PNG" alt="Proxy Tab">
 <figcaption style="font-size:small;">
 Descriptive...if not creative.
 </figcaption>
@@ -35,7 +35,7 @@ Descriptive...if not creative.
 But why is the ability to see all your web application traffic and mess with it so important?  Well the truth is, web apps do so much more than they appear to on the surface.  A single click can generate dozens of requests in the background and submit information you never see just by browsing a site.  For a typical user, this is a convenience.  For a security researcher, this can't be ignored.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/google.PNG" alt="One request?">
+<img src="/images/burptut-03/google.PNG" alt="One request?">
 <figcaption style="font-size:small;">
 All this just to see the Google homepage?
 </figcaption>
@@ -47,7 +47,7 @@ Not sure exactly what I mean?  Let's fix that by digging into the details a litt
 
 ## The Options Tab
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/options.PNG" alt="Options">
+<img src="/images/burptut-03/options.PNG" alt="Options">
 <figcaption style="font-size:small;">
 We've got options...
 </figcaption>
@@ -58,7 +58,7 @@ If you have been following along as you went through parts [1](https://opensecur
 Generally speaking, you won't mess with the 'Proxy Listeners' section of this tab, as the default address and port of 127.0.0.1:8080 are fine 99% of the time.  The most important parts here are the buttons that manage the CA certificate files, which you should have installed in your browser while you were setting up Burp in [part 1](https://opensecurity.io/resources/beginners-guide-to-web-app-pentesting-burp-suite/) of this series.  You did that right...?  Of course you did!
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/you-rock.jpg" alt="you-rock">
+<img src="/images/burptut-03/you-rock.jpg" alt="you-rock">
 <figcaption style="font-size:small;">
 Because you rock!
 </figcaption>
@@ -67,7 +67,7 @@ Because you rock!
 One section down are the 'Intercept Client Requests' rules.  When you are intercepting traffic, you can configure this section to ensure only the traffic you care about is being intercepted for manual inspection.  Normally you won't change these rules, but it is nice to be able to if you have to.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/options-1.PNG" alt="intercept-rules">
+<img src="/images/burptut-03/options-1.PNG" alt="intercept-rules">
 <figcaption style="font-size:small;">
 Request and Response Interception Rules
 </figcaption>
@@ -76,7 +76,7 @@ Request and Response Interception Rules
 Right below the 'Intercept Client Requests' rules are the 'Intercept Server Responses' rules.  The manipulation of server responses is not as popular as the manipulation of client requests, but in some cases, such as with Javascript-heavy Single Page Applications, modifying a response can be the most effective way to find vulnerabilities.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/options-2.PNG" alt="match-replace-rules">
+<img src="/images/burptut-03/options-2.PNG" alt="match-replace-rules">
 <figcaption style="font-size:small;">
 Match and Replace automates the manual changes you make all the time
 </figcaption>
@@ -87,7 +87,7 @@ The last section we will focus on in this tab is the 'Match and Replace' ruleset
 ## HTTP History
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/http-history.PNG" alt="intercept-rules">
+<img src="/images/burptut-03/http-history.PNG" alt="intercept-rules">
 <figcaption style="font-size:small;">
 Time for a history lesson
 </figcaption>
@@ -97,12 +97,12 @@ The next subtab that we will go through is 'HTTP history'.  When you are testing
 
 The 'HTTP history' subtab provides a list of every request that Burp has logged in the project that is sortable by time, order, type, size, length, method, host, IP...
 
-![3hourslater](/resources/content/images/2019/03/3hourslater.jpg)
+![3hourslater](/images/burptut-03/3hourslater.jpg)
 
 ...internal temperature, population density, and the diamond's clarity (I may be exaggerating).  Basically, it is very helpful for finding the requests and responses you want to look at in more detail.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/google-1.PNG" alt="history">
+<img src="/images/burptut-03/google-1.PNG" alt="history">
 <figcaption style="font-size:small;">
 So much information
 </figcaption>
@@ -115,7 +115,7 @@ Below the top section is the raw request and response data.  If you don't want r
 The last thing to mention in this section is the filter dialog.  Right below the subtabs near the top of the Burp window is a white box that runs the full width of the interface.  Clicking on it will bring up the filter dialog which allows you to filter in just about any way you can imagine.  
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/filters.PNG" alt="filters">
+<img src="/images/burptut-03/filters.PNG" alt="filters">
 <figcaption style="font-size:small;">
 When you have hundreds of requests, a quick filter makes life a lot better
 </figcaption>
@@ -126,7 +126,7 @@ An important note when it comes to filters is to make sure that the defaults are
 ## The Intercept Tab
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/intercept-tab.PNG" alt="history">
+<img src="/images/burptut-03/intercept-tab.PNG" alt="history">
 <figcaption style="font-size:small;">
 Where the magic happens
 </figcaption>
@@ -139,7 +139,7 @@ Before the demonstration, I have a few quick notes that might make your life eas
 Second, a clean Burp installation turns interception on every time you start Burp by default.  This can be annoying if you don't want to start intercepting right away, but it can be turned off by going to 'User options' -> 'Misc' and scrolling down to the section called 'Proxy Interception'
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/proxy-interception.PNG" alt="off-by-default">
+<img src="/images/burptut-03/proxy-interception.PNG" alt="off-by-default">
 <figcaption style="font-size:small;">
 You want to do this...trust me
 </figcaption>
@@ -154,7 +154,7 @@ As a general rule, client-side controls should not be the only methods used to v
 The Juice Shop application has a client side security control when users register for an account.  To get to the 'User Registration' page, you can either navigate to the '/#/register' path in the URL bar of your browser or click on 'Log In' and then 'Not yet a customer' in the interface.  
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/register.PNG" alt="User registration">
+<img src="/images/burptut-03/register.PNG" alt="User registration">
 <figcaption style="font-size:small;">
 Let's sign up for an account
 </figcaption>
@@ -167,7 +167,7 @@ First, submit a valid email address to create an account.  I'll use me@me.me as 
 POTENTIAL SPOILER: If you want to see this for yourself, login to the administrator account (User: admin@juice-sh.op, Password: admin123 on attackdefense.com instance) and navigate to the '/#/administration' path.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/me-registered.PNG" alt="Registered">
+<img src="/images/burptut-03/me-registered.PNG" alt="Registered">
 <figcaption style="font-size:small;">
 There is me at the bottom
 </figcaption>
@@ -178,7 +178,7 @@ So your user email is displayed in the interface of the administrator page.  Coo
 Log out of the application and navigate back to the user registration page.  Then turn on Burp interception by either clicking the button in the tab or using the CTRL-t hotkey combination.  When it is on, the button should appear to be pressed in and it should read, "Intercept is on."
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/intercept-on.PNG" alt="intercepting">
+<img src="/images/burptut-03/intercept-on.PNG" alt="intercepting">
 <figcaption style="font-size:small;">
 Prepare to intercept!
 </figcaption>
@@ -187,7 +187,7 @@ Prepare to intercept!
 Again, fill out the form.  You can even use the same exact information you put in the first time because we are going to change it before it gets to the server.  When you submit, your Burp application should start flashing and when you look at it, you should see something like this in the interceptor window.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/orig-burp-1.PNG" alt="Intercepted">
+<img src="/images/burptut-03/orig-burp-1.PNG" alt="Intercepted">
 <figcaption style="font-size:small;">
 INTERCEPTION!!!!
 </figcaption>
@@ -196,7 +196,7 @@ INTERCEPTION!!!!
 Notice the parameters that are being sent to the application, and also that when you click into the window, you are able to change the text that is being sent.  Imagine if you changed the email to something like what is in the photo below.  
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/modified-1.PNG" alt="modified">
+<img src="/images/burptut-03/modified-1.PNG" alt="modified">
 <figcaption style="font-size:small;">
     Payload: &lt;script>alert('Stored XSS')&lt;/script>
 </figcaption>
@@ -207,7 +207,7 @@ Then stop imagining it and do it.
 After the request is modified, you can either click forward or just turn interception off and the request will be forwarded for you.  Once it is on its way, check out how Burp logged the request in the 'HTTP history' tab.  
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/history.PNG" alt="edited">
+<img src="/images/burptut-03/history.PNG" alt="edited">
 <figcaption style="font-size:small;">
 See the checkmark in the 'Edited' column and the extra 'Edited request' tab at the bottom?  You did that.
 </figcaption>
@@ -220,7 +220,7 @@ Ok so the request has been submitted and based on the response from the server, 
 Even more importantly, if you log back in as an admin and go to the administration page of the application you might notice a popup appears with your XSS message!  Great job.  Using an intercepting proxy, you have bypassed a client-side security control and sent a "malicious" payload to the application.  
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/xss.PNG" alt="xss">
+<img src="/images/burptut-03/xss.PNG" alt="xss">
 <figcaption style="font-size:small;">
 This is just a simple, and benign, example.  XSS is bad news bears.
 </figcaption>
