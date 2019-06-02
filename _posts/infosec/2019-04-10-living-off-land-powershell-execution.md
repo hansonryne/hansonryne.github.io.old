@@ -23,7 +23,7 @@ Fairly recently, my team found ourselves with Remote Desktop Protocol (RDP) conn
 The environment we found ourselves in had a lot of security restrictions in place.  There was no access to any files outside the user libraries via the file explorer.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/file-explorer.PNG" alt="file-explorer">
+<img src="/images/lol-powershell-bypass/file-explorer.PNG" alt="file-explorer">
 <figcaption style="font-size:small;">
 Look at the left sidebar.  Not even "This PC"
 </figcaption>
@@ -32,7 +32,7 @@ Look at the left sidebar.  Not even "This PC"
 We could not open a command prompt or a PowerShell window through the start menu.
 
 <figure style="text-align:center; margin:1em;">
-<img src="/resources/content/images/2019/03/cmd-click.gif" alt="no clicking" style="max-height:400px;">
+<img src="/images/lol-powershell-bypass/cmd-click.gif" alt="no clicking" style="max-height:400px;">
 <figcaption style="font-size:small;">
 Can you at least give me an "Access Denied" or something?
 </figcaption>
@@ -41,7 +41,7 @@ Can you at least give me an "Access Denied" or something?
 We couldn't even use "run."
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/run.PNG" alt="Proxy Tab">
+<img src="/images/lol-powershell-bypass/run.PNG" alt="Proxy Tab">
 <figcaption style="font-size:small;">
 Walk don't run...actually don't even walk
 </figcaption>
@@ -56,7 +56,7 @@ So without even the permissions to **right click(!?!)**, we set off to find a wa
 Hey, you want to know a secret?  Internet Explorer is still around, and in a big way.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/market-share.PNG" alt="market share">
+<img src="/images/lol-powershell-bypass/market-share.PNG" alt="market share">
 <figcaption style="font-size:small;">
 Thanks w3counter.com
 </figcaption>
@@ -76,7 +76,7 @@ The process is fairly simple.  Especially if your goals are small - like opening
 8. Profit
 
 <figure style="text-align:center; margin:1em;">
-<img src="/resources/content/images/2019/03/notepad.gif" alt="batch file" style="max-height:400px;">
+<img src="/images/lol-powershell-bypass/notepad.gif" alt="batch file" style="max-height:400px;">
 <figcaption style="font-size:small;">
 Oh yeah.....
 </figcaption>
@@ -91,7 +91,7 @@ That was not this case in this test (it will not be the case in every test) so i
 1. Enable the Developer tab on the Excel ribbon.
 
 <figure style="text-align:center; margin:1em;">
-<img src="/resources/content/images/2019/03/devtab.PNG" alt="devtab" style="max-height:400px;">
+<img src="/images/lol-powershell-bypass/devtab.PNG" alt="devtab" style="max-height:400px;">
 <figcaption style="font-size:small;">
 File -> Options -> Customize Ribbon
 </figcaption>
@@ -100,7 +100,7 @@ File -> Options -> Customize Ribbon
 2. Open the new macro dialog.
 
 <figure style="text-align:center; margin:1em;">
-<img src="/resources/content/images/2019/03/newmacro.PNG" alt="new macro" style="max-height:400px;">
+<img src="/images/lol-powershell-bypass/newmacro.PNG" alt="new macro" style="max-height:400px;">
 <figcaption style="font-size:small;">
 Developer tab -> Macros
 </figcaption>
@@ -110,7 +110,7 @@ Developer tab -> Macros
 4. Enter your macro script.
 
 <figure style="text-align:center; margin:1em;">
-<img src="/resources/content/images/2019/03/vbascript.PNG" alt="vba script" style="max-height:400px;">
+<img src="/images/lol-powershell-bypass/vbascript.PNG" alt="vba script" style="max-height:400px;">
 <figcaption style="font-size:small;">
 Shell "CMD /K powershell.exe", vbNormalFocus
 </figcaption>
@@ -118,7 +118,7 @@ Shell "CMD /K powershell.exe", vbNormalFocus
 
 5. Save the macro.
 <figure style="text-align:center; margin:1em;">
-<img src="/resources/content/images/2019/03/savemacro.PNG" alt="save macro" style="max-height:400px;">
+<img src="/images/lol-powershell-bypass/savemacro.PNG" alt="save macro" style="max-height:400px;">
 <figcaption style="font-size:small;">
 Save as a macro-enabled workbook
 </figcaption>
@@ -126,7 +126,7 @@ Save as a macro-enabled workbook
 
 6. Run the macro.
 <figure style="text-align:center; margin:1em;">
-<img src="/resources/content/images/2019/03/runmacro.PNG" alt="run macro" style="max-height:400px;">
+<img src="/images/lol-powershell-bypass/runmacro.PNG" alt="run macro" style="max-height:400px;">
 <figcaption style="font-size:small;">
 Developer tab -> Macros
 </figcaption>
@@ -136,7 +136,7 @@ Developer tab -> Macros
 
 <h2>Method #3: Dynamic Data Exchange</h2>
 
-If you read the previous [Living Off the Land](https://opensecurity.io/resources/living-off-the-land-with-dde/) post I wrote, you'll probably already know this method as a way to get shells through an Excel email attachment.  But if you are already in the target network, have Excel, and macros *are* disabled (rendering method 2 useless), this is a useful way to bring up a local shell as well.
+If you read the previous [Living Off the Land](https://www.rynehanson.com/infosec/living-off-land-dde/) post I wrote, you'll probably already know this method as a way to get shells through an Excel email attachment.  But if you are already in the target network, have Excel, and macros *are* disabled (rendering method 2 useless), this is a useful way to bring up a local shell as well.
 
 1. Open a normal blank Excel workbook.
 2. Enter the DDE payload into a cell.
@@ -144,7 +144,7 @@ If you read the previous [Living Off the Land](https://opensecurity.io/resources
 4. Hey look!  Another shell.
 
 <figure style="text-align:center; margin:1em;">
-<img src="/resources/content/images/2019/03/dde.gif" alt="dde" style="max-height:400px;">
+<img src="/images/lol-powershell-bypass/dde.gif" alt="dde" style="max-height:400px;">
 <figcaption style="font-size:small;">
 It's like a turtle colony out here.
 </figcaption>
@@ -155,7 +155,7 @@ It's like a turtle colony out here.
 So of course it's important to note that this can be secured.  In all of these cases you will essentially have a powershell process running with a parent in Internet Explorer or Excel, and frankly, that should "never" happen (I know never say never).  The best way to identify this is to monitor for programs running from parent processes that make no sense.  Then block it.  
 
 <figure style="text-align:center; margin:1em;">
-<img src="/resources/content/images/2019/03/processids.PNG" alt="processes" style="max-height:400px;">
+<img src="/images/lol-powershell-bypass/processids.PNG" alt="processes" style="max-height:400px;">
 <figcaption style="font-size:small;">
 Bottom line: If you see a powershell running from Internet Explorer, <br>there better be a really good reason for it.
 </figcaption>
