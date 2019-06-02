@@ -1,3 +1,23 @@
+---
+layout: page
+sidebar: right
+subheadline: 'Pentesting'
+title:  "Living Off the Land: Opening Powershell When You Can't Open Powershell"
+teaser: "When you aren't allowed to open Powershell via normal start menus or links, how do you do it anyway?"
+breadcrumb: true
+categories:
+    - infosec
+tags:
+    - blog
+    - infosec
+    - post
+    - pentesting
+    - powershell
+    - windows
+image:
+    thumb: lol-powershell-bypass/03spgpowershell-a-smart-persons-guidehero.jpg
+    title: lol-powershell-bypass/03spgpowershell-a-smart-persons-guidehero.jpg
+---
 Fairly recently, my team found ourselves with Remote Desktop Protocol (RDP) connections into a network as a low level user.  It was a good spot to be right off the bat, since it was a reliable foothold in the network, but when I said it was a low level user I mean LOW.
 
 The environment we found ourselves in had a lot of security restrictions in place.  There was no access to any files outside the user libraries via the file explorer.
