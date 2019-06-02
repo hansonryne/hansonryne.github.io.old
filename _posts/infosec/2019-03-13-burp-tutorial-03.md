@@ -240,4 +240,4 @@ And that wraps up this installment of the Burp Suite tutorial series.  It is imp
 
 The next part of the series will focus on the 'Intruder' tab - a handy tool for brute forcing and fuzzing application inputs for vulnerabilities in a semi-automated fashion.
 
-And for those just joining in this journey through Burp Suite, be sure to check out [Part 1](https://opensecurity.io/resources/beginners-guide-to-web-app-pentesting-burp-suite/) and [Part 2](https://opensecurity.io/resources/beginners-guide-to-web-hacking-with-burp-suite-suite-part-2/).
+And for those just joining in this journey through Burp Suite, be sure to check out [Part 1](https://www.rynehanson.com/infosec/burp-tutorial-01/) and [Part 2](https://www.rynehanson.com/infosec/burp-tutorial-02/).
