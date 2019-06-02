@@ -26,7 +26,7 @@ This post focuses on the core function of Burp Suite: the intercepting proxy.  T
 As I've mentioned before, the use of an intercepting proxy for web app pentesting is incredibly important.  Burp Suite gives you this functionality in the 'Proxy' tab of the interface.
 
 <figure style="text-align:center; margin:1em">
-<img src="/resources/content/images/2019/03/proxytab.PNG" alt="Proxy Tab">
+<img src="burptut-03/proxytab.PNG" alt="Proxy Tab">
 <figcaption style="font-size:small;">
 Descriptive...if not creative.
 </figcaption>
