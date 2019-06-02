@@ -1,3 +1,23 @@
+---
+layout: page
+sidebar: right
+subheadline: 'Pentesting Tools'
+title:  "Web Application Pentesting with Burp Suite (Part 3)"
+teaser: "The Next Installment of Pentesting with Burp Suite covers intercepting and modifying requests and responses."
+breadcrumb: true
+categories:
+    - infosec
+tags:
+    - blog
+    - pentesting
+    - 'web applications'
+    - burp
+    - tutorial
+image:
+    thumb: burptut-03/title.png
+    title: burptut-03/title.png
+---
+
 Welcome to Part 3 of the Burp Suite tutorial series - where you learn to use one of the most powerful tools in web application pentesting effectively and efficiently.  This is a pretty exciting edition of the series because, unlike Part 1 and Part2, you are finally going to start doing some manual manipulation of HTTP traffic and find vulnerabilities that a typical automated scanner will fail to detect.
 
 This post focuses on the core function of Burp Suite: the intercepting proxy.  This is the tab where a web application penetration tester will spend a good deal of their time in Burp whether it be to manually inspect traffic as it leaves and returns to the browser, to look back at the history of requests, or to manage rules and filters that change requests and responses on the fly.  This is the core functionality of Burp Suite, so it is critical that you have a good working knowledge of this fundamental block of the application in order to take advantage of everything that is to follow.  With that, let's dive in.
