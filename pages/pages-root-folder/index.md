@@ -6,22 +6,8 @@
 #
 layout: frontpage
 header:
-  image_fullwidth: "header_hawaii.jpg"
-widget1:
-  title: "Blog"
-  url: 'https://www.rynehanson.com/blog/'
-  image: books-v1.jpg
-  text: 'Browse the blog.  It is updated with content every so often.  :)'
-widget2:
-  title: "Check out my GitHub"
-  url: 'https://github.com/hansonryne'
-  text: 'A sample of some public projects I have started and mostly not finished.'
-  image: github.png
-widget3:
-  title: "Follow me on Twitter"
-  url: 'https://twitter.com/_hansonet_'
-  image: twitter-logo.png
-  text: 'Twitter is my main social media presence.  Its where I keep up to date.'
+  image_fullwidth: "collage/Brown and White Coffee Photo Collage.jpeg"
+
 #
 # Use the call for action to show a button on the frontpage
 #
